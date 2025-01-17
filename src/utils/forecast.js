@@ -12,6 +12,7 @@ function forecast(coordinates, cb) {
             cb(undefined, {
                 temperature: body.current.temperature, 
                 feelslike: body.current.feelslike,
+                weather_descriptions: body.current.weather_descriptions
             })
         }
     })
